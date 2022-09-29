@@ -7,11 +7,17 @@ body {
 
 nav {
     display: flex;
-    justify-content: space-between;
+}
+
+.navclass {
+display: flex;
+justify-content: space-between;
 }
 
 nav a {
-    padding: 8px;
+    padding: 0.5rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
     flex: 1;
     background-color: rgb(0, 0, 0);
     text-decoration: none;
@@ -24,21 +30,12 @@ nav a {
     align-items: center;
 }
 
-#empty {
-    flex: 2;
-}
-
 nav a:hover {
     background-color: grey;
 }
 
-nav a#empty:hover {
-    background-color: black;
-}
-
-nav a#pokeball img {
-    flex:0%;
-    max-width: 30%;
+.navclass img {
+    width: 5%;
 }
 
 section#hero h2 {
@@ -94,28 +91,38 @@ section.pokepics img {
     font-size: 2em;
     font-style: italic;
     text-align: center;
-    padding: 5px;
+    padding: 0.313rem;
     margin: 0;
 }
 
 .card {
     width: 30vw;
     margin: 0 auto;
-    border: 4px solid gold;
+    border: 0.25rem solid gold;
     background-color: lightyellow;
-    border-radius: 30px;
+    border-radius: 1.875rem;
     overflow: hidden;
-    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.438rem 0.625rem 1.063rem rgba(0, 0, 0, 0.2);
+    transition: background-color 800ms ease-out 100ms;
+}
+
+.card:hover {
+    background-color: gold;
 }
 
 #scorbunnycard {
     width: 30vw;
     margin: 0 auto;
-    border: 4px solid rgb(255, 0, 0);
+    border: 0.25rem solid rgb(255, 0, 0);
     background-color: rgb(255, 206, 206);
-    border-radius: 30px;
+    border-radius: 1.875rem;
     overflow: hidden;
-    box-shadow: 7px 10px 17px rgba(0, 0, 0, 0.2);
+    box-shadow: 0.438rem 0.625rem 1.063rem rgba(0, 0, 0, 0.2);
+    transition: background-color 800ms ease-out 100ms;
+}
+
+#scorbunnycard:hover {
+    background-color: red;
 }
 
 .profile-picture {
@@ -131,7 +138,7 @@ h3 {
     font-size: 2em;
     font-style: italic;
     text-align: center;
-    padding: 5px;
+    padding: 0.313rem;
     margin: 0;
 }
 
@@ -141,13 +148,13 @@ h3 {
 
 .contact {
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: gold;
 }
 
 #scorbunnycontact {
     text-align: center;
-    padding: 10px;
+    padding: 0.625rem;
     background-color: rgb(255, 0, 0);
 }
 
